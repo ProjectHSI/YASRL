@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>YASRL (Yet Another Source Rcon Library)</Title>
+    <Description>Yet another implementation of the Source Rcon protocol. This is (I believe) different from many other Source Rcon packages for the fact that it can be both client and server.</Description>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageLicenseExpression>MIT-open-group</PackageLicenseExpression>
+    <EnableNETAnalyzers>False</EnableNETAnalyzers>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <FileVersion>0.0.0.1</FileVersion>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <NeutralLanguage>en-AU</NeutralLanguage>
+    <SignAssembly>False</SignAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>9999</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Client\" />
+  </ItemGroup>
+
+</Project>
